@@ -1,0 +1,106 @@
+@import "colors";
+
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: $white;
+    text-transform: uppercase;
+}
+
+.navbarTop {
+    background-color: $beige;
+    height: 9.6rem;
+
+    a {
+        text-decoration: none;
+        color: $text1;
+
+        span {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+        }
+    }
+}
+
+.navbar {
+    a {
+        text-decoration: none;
+        color: $text1;
+        font-size: 2.1rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+.navbar-brand {
+    span {
+        display: none;
+    }
+}
+
+#navbarBottom {
+    background-color: $darkBrown;
+}
+
+.instagramContainer{
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+}
+
+.instagramContainer__text {
+    font-size: 2.1rem;
+    width: 160px;
+}
+
+.instagramContainer__icon {
+    background-color: $beige;
+    border-radius: 50%;
+    height: 35px; 
+    width: 35px;
+    position: relative;
+    margin: 0;
+    i {
+        position: absolute;
+        margin-left: auto;
+        margin-right: auto;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+
+
+@media (max-width: 993px){
+    #navbarBottom {
+        background-color: $beige;
+        ul {
+            background-color: $darkBrown;
+            margin-top: 2rem;
+        }
+    }
+    .instagramContainer {
+        position: fixed;
+        bottom: 0;
+        .instagramContainer__text {
+            display: none;
+        }
+    }
+}

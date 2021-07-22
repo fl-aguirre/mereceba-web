@@ -1,0 +1,79 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #FFFFFF;
+  text-transform: uppercase; }
+
+.navbarTop {
+  background-color: #EFE5DB;
+  height: 9.6rem; }
+  .navbarTop a {
+    text-decoration: none;
+    color: #414141; }
+    .navbarTop a span {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2.1rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 26px;
+      letter-spacing: 0em;
+      text-align: center; }
+
+.navbar a {
+  text-decoration: none;
+  color: #414141;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center; }
+
+.navbar-brand span {
+  display: none; }
+
+#navbarBottom {
+  background-color: #D3BAAF; }
+
+.instagramContainer {
+  width: 300px;
+  display: flex;
+  flex-direction: row; }
+
+.instagramContainer__text {
+  font-size: 2.1rem;
+  width: 160px; }
+
+.instagramContainer__icon {
+  background-color: #EFE5DB;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  position: relative;
+  margin: 0; }
+  .instagramContainer__icon i {
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    text-align: center; }
+
+@media (max-width: 993px) {
+  #navbarBottom {
+    background-color: #EFE5DB; }
+    #navbarBottom ul {
+      background-color: #D3BAAF;
+      margin-top: 2rem; }
+  .instagramContainer {
+    position: fixed;
+    bottom: 0; }
+    .instagramContainer .instagramContainer__text {
+      display: none; } }
