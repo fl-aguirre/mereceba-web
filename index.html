@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css"> 
     <link rel="stylesheet" href="css/stylecss.css" type="text/css"/>
@@ -74,6 +78,50 @@
         </div>
     </header>
     <main>
+        <!----------------------------------------------------------------NUESTROS PRODUCTOS-----------------------------------------------------------------------------  -->
+        <section id="nuestrosProductos">
+
+            <h1>NUESTROS PRODCUTOS</h1>
+        <!-- barra de info sobre pedidos -->
+            <div id="productos__pedidosInfo">
+                <div class="mainProductos__divInfo"><img src="images/carrito.png" alt="telefono con carrito de compras en pantalla"><p>Hacenos tu pedido por instagram</p></div>
+                <div class="mainProductos__divInfo"><img src="images/ubicacion.png" alt="logo de ubicacion"><p>Estamos en córdoba capital y villa maría</p></div>
+                <div class="mainProductos__divInfo"><img src="images/camion.png" alt="camion"><p>Hacemos Envíos a todo el país</p></div>
+            </div>
+        <!-- productos -->
+            <div id="productos"></div>
+
+        </section>
+        <!--------------------------------------------------------------------MATE TIPS-----------------------------------------------------------------------------  -->
+        <section id="matetips">
+            <h1>MATETIPS</h1>
+            <!-- BOTÓN PARA EL PRIMER TIP -->
+            <button class="btn container" id="matetip1">
+                <div class="mainMatetips__divBotonGrande" id="mainMatetip__divBotonGrande--curar"><h3>¿CÓMO CURAR TU MATE?</h3></div>                               
+            </button>
+            <div class="container" id="tip1">
+                <ul>
+                    <li>•  Llená el mate con yerba húmeda, agregale un poco de agua tibia y dejalo reposar por 24 hs.</li>
+                    <li>•  Al día siguiente. quitá la yerba y con una cucharita raspá el interior para quitar los restos de calabaza.</li>
+                    <li>•  Volvé a repetir los pasos 1 y 2 por 5 días</li>
+                    <li>•  Ya podés empezar a utilizar el mate</li>
+                </ul>
+            </div>
+            <!-- BOTÓN PARA EL SEGUNDO TIP -->
+            <button class="btn container" id="matetip2">
+                <div class="mainMatetips__divBotonGrande" id="mainMatetip__divBotonGrande--cebar"><h3>¿CÓMO CEBAR UN BUEN MATE?</h3></div>               
+            </button>
+            <div class="container" id="tip2">
+                <ul>
+                    <li>•  Para que la temperatura de tu mate esté en su punto justo, asegurate de que no esté ni tibia ni hirviendo. Lo aconsejable es que esté entre 70 y 80º C.</li>
+                    <li>•  Llená hasta las tres cuartas partes del recipiente. Acto seguido, tapá con una mano la boca del mate, invertila y luego agitala un par de veces para quitarle el polvo.</li>
+                    <li>•  Ahora recostá la yerba sobre una de las paredes del mate para formar un hueco en la pared opuesta y, luego, colocá agua tibia suavemente.</li>
+                    <li>•  Tapá con un dedo el orificio superior de la bombilla y colocala en el hueco que antes generaste.</li>
+                    <li>•  Empezá a cebar el mate, colocando poca agua por turno y siempre en el mismo lugar (al lado de la bombilla es la mejor alternativa).</li>
+                </ul>
+            </div>
+
+        </section>
 
 
     </main>
@@ -83,5 +131,7 @@
     <script src="js/lib/jquery-3.6.0.min.js"></script>
     <script src="js/lib/bootstrap.bundle.min.js"></script>
     <script src="https://kit.fontawesome.com/32a702b04e.js" crossorigin="anonymous"></script>
+    <!-- script para el toggle de los botones grandes del main -->
+    <script src="js/mateTipsToggle.js"></script>
 </body>
 </html>
