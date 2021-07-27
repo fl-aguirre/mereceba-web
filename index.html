@@ -14,22 +14,29 @@
     <title>Me Re Ceba Mates</title>
 </head>
 <body>
+
     <header>
-        <div class="container-fluid navbarTop">
+        <!-- Contenedor de logo y contacto -->
+        <div class="container-fluid navbarTop col-12">
             <div class="d-flex justify-content-between align-items-center">
                 <a href="#" class="mx-3 mt-4">
                     <img src="images/logo.png" alt="Logo" width="200" class="img-fluid">
                 </a>
-                <div class="instagramContainer">
-                    <div class="instagramContainer__text mx-3">
+                <div class="contactanosCont">
+                    <div class="contactanosCont__text mx-3">
                         Contactanos
                     </div>
-                    <div class="instagramContainer__icon">
+                    <div class="whatsappCont__icon">
+                        <i class="fab fa-whatsapp fa-3x"></i>
+                    </div>
+                    <div class="instagramCont__icon">
                         <i class="fab fa-instagram fa-3x"></i>
                     </div>
                 </div>
             </div>
         </div>
+
+        <!-- Barra de navegación -->
         <nav class="navbar navbar-expand-lg navbar-light" id="navbarBottom">
             <div class="container-fluid">
                 <div class="navbar-brand">
@@ -41,18 +48,20 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav mx-auto">
                     <li class="nav-item mx-5">
-                        <a class="nav-link" href="#">¿Quiénes somos?</a>
+                        <a class="nav-link" href="#quienesSomos">¿Quiénes somos?</a>
                     </li>
                     <li class="nav-item mx-5">
-                        <a class="nav-link" href="#">Nuestros productos</a>
+                        <a class="nav-link" href="#nuestrosProductos">Nuestros productos</a>
                     </li>
                     <li class="nav-item mx-5">
-                        <a class="nav-link" href="#">Matetips</a>
+                        <a class="nav-link" href="#matetips">Matetips</a>
                     </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
+        <!-- Carousel de imágenes -->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -61,10 +70,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/Rectangle1.png" class="d-block w-100" alt="...">
+                    <img src="images/Rectangle1.png" class="d-block w-100" alt="Imagen carousel 1">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/Rectangle2.png" class="d-block w-100" alt="...">
+                    <img src="images/Rectangle2.png" class="d-block w-100" alt="Imagen carousel 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/Rectangle2.png" class="d-block w-100" alt="Imagen carousel 3">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -78,10 +90,18 @@
         </div>
     </header>
     <main>
+        <!----------------------------------------------------------------QUIENES SOMOS-----------------------------------------------------------------------------  -->
+        <section id="quienesSomos">
+            <div>
+                <h1>¿QUIENES SOMOS?</h1>
+                <p>Somos Candelaria y Julieta, dos amigas emprendedoras que nos juntamos para ofrecerte los mejores mates para todos tus días</p>
+            </div>
+        </section>
+
         <!----------------------------------------------------------------NUESTROS PRODUCTOS-----------------------------------------------------------------------------  -->
         <section id="nuestrosProductos">
 
-            <h1>NUESTROS PRODCUTOS</h1>
+            <h1>NUESTROS PRODUCTOS</h1>
         <!-- barra de info sobre pedidos -->
             <div id="productos__pedidosInfo">
                 <div class="mainProductos__divInfo"><img src="images/carrito.png" alt="telefono con carrito de compras en pantalla"><p>Hacenos tu pedido por instagram</p></div>
@@ -91,6 +111,14 @@
         <!-- productos -->
             <div id="productos"></div>
 
+        </section>
+
+        <!----------------------------------------------------------------MATES PERSONALIZADOS-----------------------------------------------------------------------------  -->
+        <section id="matesPersonalizados">
+            <div>
+                <h1>HACEMOS MATES PERSONALIZADOS</h1>
+                <p>Consultá por nuestros servicios de grabado láser en cuero, logos personalizados o grabado de virola</p>
+            </div>
         </section>
         <!--------------------------------------------------------------------MATE TIPS-----------------------------------------------------------------------------  -->
         <section id="matetips">

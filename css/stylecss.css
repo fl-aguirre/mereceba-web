@@ -28,42 +28,28 @@ header {
       letter-spacing: 0em;
       text-align: center; }
 
-.navbar a {
-  text-decoration: none;
-  color: #414141;
-  font-size: 2.1rem;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 26px;
-  letter-spacing: 0em;
-  text-align: center; }
-
-.navbar-brand span {
-  display: none; }
-
-#navbarBottom {
-  background-color: #D3BAAF; }
-
-.instagramContainer {
+.contactanosCont {
   width: 300px;
   display: flex;
-  flex-direction: row; }
+  flex-direction: row;
+  z-index: 1000;
+  align-items: center; }
 
-.instagramContainer__text {
+.contactanosCont__text {
   font-size: 2.1rem;
-  width: 160px; }
+  text-align: center; }
 
-.instagramContainer__icon {
+.instagramCont__icon, .whatsappCont__icon {
   background-color: #EFE5DB;
   border-radius: 50%;
-  height: 35px;
-  width: 35px;
+  width: 4rem;
+  height: 4rem;
   position: relative;
-  margin: 0; }
-  .instagramContainer__icon i {
+  margin: 0;
+  display: flex;
+  align-items: center; }
+  .instagramCont__icon i, .whatsappCont__icon i {
     position: absolute;
-    margin-left: auto;
-    margin-right: auto;
     left: 0;
     right: 0;
     text-align: center; }
@@ -74,11 +60,51 @@ header {
     #navbarBottom ul {
       background-color: #D3BAAF;
       margin-top: 2rem; }
-  .instagramContainer {
+  .contactanosCont {
     position: fixed;
-    bottom: 0; }
-    .instagramContainer .instagramContainer__text {
-      display: none; } }
+    height: 100%;
+    width: 100%;
+    width: auto;
+    bottom: 0px;
+    right: 10px; }
+    .contactanosCont .contactanosCont__text {
+      display: none; }
+  .whatsappCont__icon {
+    display: none; } }
+
+.navbar a {
+  text-decoration: none;
+  color: #414141;
+  font-size: 2.1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: center; }
+
+#navbarBottom {
+  background-color: #D3BAAF; }
+
+.navbar-brand span {
+  display: none; }
+
+main section#quienesSomos {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main section#quienesSomos div {
+    background-color: #EFE5DB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 13rem;
+    padding: 1.5rem;
+    margin: 2rem;
+    text-align: center; }
+    main section#quienesSomos div p {
+      font-size: 1.25rem; }
 
 main section#nuestrosProductos {
   display: flex;
@@ -101,6 +127,24 @@ main section#nuestrosProductos {
         font-size: 1.25rem; }
   main section#nuestrosProductos div#productos {
     display: flex; }
+
+main section#matesPersonalizados {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main section#matesPersonalizados div {
+    background-color: #EFE5DB;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 13rem;
+    padding: 1.5rem;
+    margin: 2rem;
+    text-align: center; }
+    main section#matesPersonalizados div p {
+      font-size: 1.25rem; }
 
 main section#matetips {
   display: flex;
