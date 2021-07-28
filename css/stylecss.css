@@ -126,7 +126,10 @@ main section#nuestrosProductos {
       main section#nuestrosProductos div#productos__pedidosInfo div.mainProductos__divInfo p {
         font-size: 1.25rem; }
   main section#nuestrosProductos div#productos {
-    display: flex; }
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 70%; }
 
 main section#matesPersonalizados {
   display: flex;
