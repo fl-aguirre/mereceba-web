@@ -27,20 +27,11 @@ header{
 .navbarTop {
     background-color: $beige;
     height: 9.6rem;
+    font-weight: 500;
 
     a {
         text-decoration: none;
         color: $text1;
-
-        span {
-        font-family: 'Montserrat', sans-serif;
-        font-size: 2.1rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 26px;
-        letter-spacing: 0em;
-        text-align: center;
-        }
     }
 }
 
@@ -54,8 +45,12 @@ header{
 }
 
 .contactanosCont__text {
-    font-size: 2.1rem;
+    font-size: 2rem;
     text-align: center;
+    color: $text1;
+    &:hover{
+        color: $brownHovered;
+    }
 }
 
 //Acá le doy formato al div que contiene los íconos. 
@@ -74,36 +69,10 @@ header{
         left: 0;
         right: 0;
         text-align: center;
-    }
-}
-
-//RESPONSIVE DEL NAVBAR
-@media (max-width: 993px){
-    #navbarBottom {
-        background-color: $beige;
-        ul {
-            background-color: $darkBrown;
-            margin-top: 2rem;
+        color: $text1;
+        &:hover{
+            color: $brownHovered;
         }
-    }
-    //RESPONSIVE DEL CONTENEDOR DEL CONTACTO
-    //Acá lo pongo fixed para que el ícono de Instagram se desplace en el lateral de la web.
-    .contactanosCont {
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        width: auto;
-        bottom: 0px;
-        right: 10px;
-
-        //Acá oculto el texto "Contáctenos" al hacerse el responsive.
-        .contactanosCont__text {
-            display: none;
-        }
-    }
-    // Quitar el ícono de whatsapp en responsive
-    .whatsappCont__icon{
-        display: none;
     }
 }
 
@@ -113,7 +82,7 @@ header{
     a {
         text-decoration: none;
         color: $text1;
-        font-size: 2.1rem;
+        font-size: 2rem;
         font-style: normal;
         font-weight: 500;
         line-height: 26px;
@@ -125,6 +94,9 @@ header{
 //Pintar de marrón el navbar
 #navbarBottom {
     background-color: $darkBrown;
+    a:hover{
+        color: $brownHovered;
+    }
 }
 
 //Esto capaz no se entiende mucho. Boostrap detecta esta clase (originalmente pensada para el brand)
@@ -134,6 +106,85 @@ header{
     span {
         display: none;
     }
+}
+
+//RESPONSIVE DEL NAVBAR Y FOOTER
+@media (max-width: 993px){
+    //RESPONSIVE DEL CONTENEDOR DEL CONTACTO
+    //Acá lo pongo fixed para que el ícono de Instagram se desplace en el lateral de la web.
+    .contactanosCont {
+        position: fixed;
+        width: 40px;
+        bottom: 20px;
+        right: 20px;
+
+        //Acá oculto el texto "Contáctenos" al hacerse el responsive.
+        .contactanosCont__text {
+            display: none;
+        }
+    }
+    // Quitar el ícono de whatsapp en responsive
+    .whatsappCont__icon{
+        display: none;
+    }
+
+    .navbar li {
+        margin: 1.5rem;
+    }
+    
+    #navbarBottom {
+        background-color: $beige;
+    }
+}
+
+//OCULTAR CONTACTO EN TOGGLER Y FOOTER
+@media (min-width: 993px){
+    #contactoId {
+        display: none;
+    }
+}
+
+//CAROUSEL
+//BOTON Y FLECHA DEL CAROUSEL
+.carousel-control-prev, .carousel-control-next {
+    background-color: $darkBrown;
+    border-radius: 50%;
+    width: 4vw;
+    height: 4vw;
+    top: 45% !important;
+    margin: 1rem;
+}
+
+.carousel-control-prev-icon{
+    width: 2.1vw;
+    height: 2.1vw;
+    margin-right: 0.3vw;
+}
+.carousel-control-next-icon {
+    width: 2.1vw;
+    height: 2.1vw;
+    margin-left: 0.3vw;
+}
+
+//TEXTO DE LA IMAGEN DEL CAROUSEL
+.carousel__imagen{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.carousel__texto{
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    height: 4vw;
+    padding: 0.5vw;
+    margin: 0;
+
+    background-color: $beigeOpacity;
+    font-size: 2.5vw;
+    text-align: center;
+    color: $text1;
 }
 
 
@@ -149,21 +200,32 @@ main{
         flex-direction: column;
         align-items: center;
 
+        margin-top: 3rem;
+
         div{
             background-color: $beige;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
+
             width: 90%;
             height: 13rem;
             padding: 1.5rem;
             margin: 2rem;
+
             text-align: center;
 
             p{
-                font-size: 1.25rem;
+                font-size: 1.5rem;
             }
+        }
+    }
+
+    //RESPONSIVE DEL DIV DE LA SECCION
+    @media (max-width: 993px){
+        section#quienesSomos div {
+            width: 100%;
         }
     }
 
@@ -176,26 +238,36 @@ main{
         flex-direction: column;
         align-items: center;
 
+        margin-top: 3rem;
+
         text-transform: uppercase;
 
         div#productos__pedidosInfo{
             display: flex;
             flex-direction: row;
-            justify-content: space-between;
+            justify-content: space-evenly;
+            align-items: center;
 
             width: 70%;
+            flex-wrap: wrap;
+            text-align: center;
 
             div.mainProductos__divInfo{                
                 display: flex;
-                flex-direction: row;                                
+                flex-direction: row;
+                align-items: center;
+                width: 25rem;
+                margin: 2rem;                                
 
                 img{
                     height: 3rem;
                     width: auto;
-                    margin-right: 3rem;
+                    margin: 1rem;
                 }
                 p{
                     font-size: 1.25rem;
+                    text-align: center;
+                    margin: 1rem;
                 }
             }
         }
@@ -205,7 +277,12 @@ main{
             flex-direction: row;
             flex-wrap: wrap;
             width: 70%;
+            justify-content: space-evenly;
 
+            div {
+                text-align: center;
+                border: none;
+            }
         }
     }
 
@@ -216,6 +293,8 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        margin-top: 3rem;
 
         div{
             background-color: $beige;
@@ -235,6 +314,13 @@ main{
         }
     }
 
+    //RESPONSIVE DEL DIV DE LA SECCION
+    @media (max-width: 993px){
+        section#matesPersonalizados div {
+            width: 100%;
+        }
+    }
+
     // -----------------------------------------------------------------------------------------------------------
     // -----------------------------------------SECTION MATETIPS--------------------------------------------------
     // -----------------------------------------------------------------------------------------------------------
@@ -243,6 +329,8 @@ main{
         display: flex;
         flex-direction: column;
         text-align: center;
+
+        margin-top: 3rem;
 
         button.btn{           
 
@@ -304,4 +392,31 @@ main{
         }
     }
 
+}
+
+//FOOTER
+footer {
+    background-color: $beige;
+    height: 12rem;
+    padding: 2rem;
+    text-align: center;
+    
+    margin-top: 1.5rem;
+
+    h1{
+        margin-bottom: 1rem;
+    }
+    i {
+        margin: 1rem;
+        &:hover{
+            color: $brownHovered;
+        }
+    }
+}
+
+//Ocultar footer
+@media (min-width: 993px){
+    footer {
+        display: none;
+    }
 }

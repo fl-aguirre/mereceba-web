@@ -52,7 +52,7 @@ function renderCard(listado) {
            <div class="modal-body">
 
                <div>
-                  <img src="${producto.img}">
+                  <img src="${producto.img}" class="img-fluid" width="350">
                   <p><strong>MEDIDAS</strong>${producto.medidads}</p>
                   <p><strong>MATERIALES</strong>${producto.materiales}</p>
                </div>

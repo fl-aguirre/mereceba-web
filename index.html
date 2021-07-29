@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- favicon -->
-    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
 
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/lib/bootstrap.min.css"> 
@@ -17,10 +17,10 @@
 
     <header>
         <!-- Contenedor de logo y contacto -->
-        <div class="container-fluid navbarTop col-12">
+        <div class="container-fluid navbarTop">
             <div class="d-flex justify-content-between align-items-center">
                 <a href="#" class="mx-3 mt-4">
-                    <img src="images/logo.png" alt="Logo" width="200" class="img-fluid">
+                    <img src="images/Mereceba Logotipo.png" alt="Logo" width="200" class="img-fluid">
                 </a>
                 <div class="contactanosCont">
                     <div class="contactanosCont__text mx-3">
@@ -29,9 +29,11 @@
                     <div class="whatsappCont__icon">
                         <i class="fab fa-whatsapp fa-3x"></i>
                     </div>
-                    <div class="instagramCont__icon">
-                        <i class="fab fa-instagram fa-3x"></i>
-                    </div>
+                    <a href="https://www.instagram.com/">
+                        <div class="instagramCont__icon">
+                            <i class="fab fa-instagram fa-3x"></i>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -56,6 +58,9 @@
                     <li class="nav-item mx-5">
                         <a class="nav-link" href="#matetips">Matetips</a>
                     </li>
+                    <li class="nav-item mx-5" id="contactoId">
+                        <a class="nav-link" href="#contactoFooter">Contactanos</a>
+                    </li>
                     </ul>
                 </div>
             </div>
@@ -70,21 +75,26 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="images/Rectangle1.png" class="d-block w-100" alt="Imagen carousel 1">
+                    <img src="images/Rectangle1.png" class="carousel__imagen d-block w-100" alt="Imagen carousel 1">
+                    <h3 class="carousel__texto">MATES CON ESTILO</h3>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/Rectangle2.png" class="d-block w-100" alt="Imagen carousel 2">
+                    <img src="images/Rectangle2.png" class="carousel__imagen d-block w-100" alt="Imagen carousel 2">
+                    <h3 class="carousel__texto">HACENOS TU PEDIDO POR INSTAGRAM</h3>
                 </div>
                 <div class="carousel-item">
-                    <img src="images/Rectangle2.png" class="d-block w-100" alt="Imagen carousel 3">
+                    <img src="images/Rectangle2.png" class="carousel__imagen d-block w-100" alt="Imagen carousel 3">
+                    <h3 class="carousel__texto">ENVÍOS A TODO EL PAÍS</h3>
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <!-- <span><i class="fa fa-angle-left" aria-hidden="true"></i></span> -->
                 <span class="visually-hidden">Previous</span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <!-- <span><i class="fa fa-angle-right" aria-hidden="true"></i></span> -->
                 <span class="visually-hidden">Next</span>
             </button>
         </div>
@@ -104,9 +114,9 @@
             <h1>NUESTROS PRODUCTOS</h1>
         <!-- barra de info sobre pedidos -->
             <div id="productos__pedidosInfo">
-                <div class="mainProductos__divInfo"><img src="images/carrito.png" alt="telefono con carrito de compras en pantalla"><p>Hacenos tu pedido por instagram</p></div>
-                <div class="mainProductos__divInfo"><img src="images/ubicacion.png" alt="logo de ubicacion"><p>Estamos en córdoba capital y villa maría</p></div>
-                <div class="mainProductos__divInfo"><img src="images/camion.png" alt="camion"><p>Hacemos Envíos a todo el país</p></div>
+                <div class="mainProductos__divInfo"><img src="images/carrito.png" alt="telefono con carrito de compras en pantalla" class="img-fluid"><p>Hacenos tu pedido por instagram</p></div>
+                <div class="mainProductos__divInfo"><img src="images/ubicacion.png" alt="logo de ubicacion" class="img-fluid"><p>Estamos en córdoba capital y villa maría</p></div>
+                <div class="mainProductos__divInfo"><img src="images/camion.png" alt="camion" class="img-fluid"><p>Hacemos Envíos a todo el país</p></div>
             </div>
         <!-- productos -->
             <div id="productos"></div>
@@ -153,8 +163,10 @@
 
 
     </main>
-    <footer>
-
+    <footer id="contactoFooter">
+        <h1>CONTACTANOS</h1>
+            <i class="fab fa-whatsapp fa-3x"></i>
+            <i class="fab fa-instagram fa-3x"></i>
     </footer>
     <script src="js/lib/jquery-3.6.0.min.js"></script>
     <script src="js/lib/bootstrap.bundle.min.js"></script>
