@@ -24,7 +24,7 @@ function productos() {
 function renderCard(listado) {
     for (const producto of listado) {
         $("#productos").append(`
-        <div class="card" style="width: 18rem;">
+        <div class="card productos__card--hover" style="width: 18rem;">
 
           <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal${producto.id}">
             <img src=${producto.img} class="card-img-top" alt=${producto.nombre}>      
