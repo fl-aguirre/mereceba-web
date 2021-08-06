@@ -225,7 +225,7 @@ main {
         background-position: center center;
         background-size: cover;
         position: relative;
-        height: 30rem;
+        height: 35rem;
         margin-top: 3.5rem; }
         main section#matetips div#mateTips__tipsContainer button.btn div.mainMatetips__divBotonGrande h3 {
           display: none;
@@ -257,7 +257,7 @@ main {
       main section#matetips div#mateTips__tipsContainer div.mateTip__tipDesplegado {
         position: relative;
         background-color: rgba(239, 229, 219, 0.6);
-        height: 30rem;
+        height: 35rem;
         margin-top: 3.5rem; }
         main section#matetips div#mateTips__tipsContainer div.mateTip__tipDesplegado ul {
           height: auto;
@@ -274,6 +274,12 @@ main {
           position: absolute;
           top: 1rem;
           right: 0; }
+  @media (max-width: 878px) {
+    main section#matetips div#mateTips__tipsContainer {
+      display: flex;
+      flex-direction: column; }
+      main section#matetips div#mateTips__tipsContainer button.btn div.mainMatetips__divBotonGrande h3 {
+        display: block; } }
 
 footer {
   background-color: #EFE5DB;
@@ -291,3 +297,23 @@ footer {
 @media (min-width: 993px) {
   footer {
     display: none; } }
+
+@media (max-width: 878px) {
+  html {
+    font-size: 1.3vw; } }
+
+@media (max-width: 700px) {
+  html {
+    font-size: 1.5vw; } }
+
+@media (max-width: 600px) {
+  html {
+    font-size: 1.8vw; } }
+
+@media (max-width: 500px) {
+  html {
+    font-size: 2vw; } }
+
+@media (max-width: 400px) {
+  html {
+    font-size: 2.27vw; } }
