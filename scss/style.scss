@@ -192,7 +192,7 @@ header{
 // ---------------------------------------------------------------MAIN--------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------------
 main{
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     // -----------------------------------------------------------------------------------------------------------
     // -----------------------------------------SECTION QUIENES SOMOS--------------------------------------------------
     // -----------------------------------------------------------------------------------------------------------
@@ -294,8 +294,13 @@ main{
                 div.modal-dialog{
                     div.modal-content{
                         div.modal-header{
+                            display: flex;
+                            flex-direction: column;
                             h5{
+                                width: 100%;
                                 font-size: 3rem;
+                                text-align: center;
+                                // margin-top: 5%;
                             }
                         }
                     }
@@ -303,6 +308,25 @@ main{
                
             }
         }
+    }
+    // EN LOS DISPOSITIVOS MÓVILES LA DESCRIPCIÓN DEL MODAL ES EN MINÚSCULA
+    @media (max-width: 993px){
+        div#productos{
+            div.modal{
+                div.modal-dialog{
+                    div.modal-content{
+                        div.modal-body{
+                            div{
+                                text-transform: lowercase;
+                            }
+                        }
+                      
+                    }
+                }
+               
+            }
+        }
+        
     }
 
     // -----------------------------------------------------------------------------------------------------------
@@ -387,13 +411,13 @@ main{
                 }
                 // LAS IMÁGENES QUE ESTÁN DENTRO DE LOS BOTONES QUE DESPLIEGAN LOS TIPS
                 div#mainMatetip__divBotonGrande--curar{
-                    background-image: url(../images/sample.jpg); 
+                    background-image: url(../images/curar.jpg); 
                 }
                 div#mainMatetip__divBotonGrande--cebar{
-                    background-image: url(../img/../images/sample.jpg);                 
+                    background-image: url(../img/../images/cebar.jpg);                 
                 }
                 div#mainMatetip__divBotonGrande--cuidar{
-                    background-image: url(../img/../images/sample.jpg);                 
+                    background-image: url(../img/../images/cuidar.jpg);                 
                 }
                 // PARA SOMBREAR LAS IMÁGENES, PERMITIENDO MEJOR LECTURA DE LOS TÍTULOS
                 div#mainMatetip__divBotonGrande--curar:before , div#mainMatetip__divBotonGrande--cebar:before, div#mainMatetip__divBotonGrande--cuidar:before{
@@ -420,22 +444,27 @@ main{
                 position: relative;
                 background-color: $beigeOpacity;
                 height: 35rem;
-                margin-top: 3.5rem;
+                margin-top: 3.85rem;
 
-                ul{
-                    height: auto;
-                    margin-top: 4rem;
-                    list-style: none;
-                    text-align: left;
-                    li{
-                        margin-top: 1.2rem;
-                        p.mateTips__subtitulo{
-                            font-weight: bold;
-                            text-decoration: underline;
-                            margin-bottom: 0.2rem;
+                div{
+                    height: 100%;
+                    display: flex;
+                    align-items: center;
+                    
+                    ol{           
+                        text-align: left;
+                        li{
+                            margin-top: 1.2rem;
+                            p.mateTips__subtitulo{
+                                font-weight: bold;
+                                text-decoration: underline;
+                                margin-bottom: 0.2rem;
+                            }
                         }
                     }
                 }
+
+               
 
                 button{
                     position: absolute;
@@ -497,6 +526,11 @@ footer {
 
 
 // LAS QUERYS PARA DISPOSITIVOS DE PANTALLA PEQUEÑA DONDE SE VA CAMBIANDO EL TAMAÑO DE FUENTE RAIZ SEGÚN SEA EL CASO
+@media (max-width: 1010px){
+    main{
+        font-size: 1.4rem;
+    }
+}
 @media (max-width: 878px){
 
     html {
