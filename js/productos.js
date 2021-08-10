@@ -43,9 +43,10 @@ function renderCard(listado) {
          <div class="modal-content">
 
            <div class="modal-header">
-
-             <h5 class="modal-title" id="${producto.id}ModalLabel">${producto.nombre}</h5>
+           
              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+             <h5 class="modal-title" id="${producto.id}ModalLabel">${producto.nombre}</h5>
+             
 
            </div>
 
