@@ -1,9 +1,9 @@
 [{
     "id": 1,
-    "nombre": "ABCDEF",
+    "nombre": "Camionero",
     "img": "./images/mates/mate1.png",
-    "medidas": "",
-    "materiales": ""
+    "medidas": "15cm de diámetro x 20cm de alto",
+    "materiales": "Calabaza, forro de cuero vacuno  y virola de aluminio"
   }, {
     "id": 2,
     "nombre": "ABCDEF",

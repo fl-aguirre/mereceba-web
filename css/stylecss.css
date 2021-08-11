@@ -238,7 +238,8 @@ main {
         main section#nuestrosProductos div#productos div.modal div.modal-dialog div.modal-content div.modal-header h5 {
           width: 100%;
           font-size: 3rem;
-          text-align: center; }
+          text-align: center;
+          text-transform: uppercase; }
   main section#matesPersonalizados {
     display: flex;
     flex-direction: column;
