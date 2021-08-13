@@ -195,8 +195,11 @@ main {
           font-size: 3rem;
           text-align: center; }
   @media (max-width: 993px) {
-    main div#productos div.modal div.modal-dialog div.modal-content div.modal-body div {
-      text-transform: lowercase; } }
+    main div#productos {
+      height: 80vh;
+      overflow-y: scroll; }
+      main div#productos div.modal div.modal-dialog div.modal-content div.modal-body div {
+        text-transform: lowercase; } }
   main section#matesPersonalizados {
     display: flex;
     flex-direction: column;

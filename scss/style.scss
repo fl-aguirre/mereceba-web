@@ -312,6 +312,8 @@ main{
     // EN LOS DISPOSITIVOS MÓVILES LA DESCRIPCIÓN DEL MODAL ES EN MINÚSCULA
     @media (max-width: 993px){
         div#productos{
+            height: 80vh;
+            overflow-y: scroll;
             div.modal{
                 div.modal-dialog{
                     div.modal-content{
@@ -479,7 +481,7 @@ main{
     // QUERY DONDE SE CAMBIA LA DISPOSICIÓN DE LOS BOTONES DE FILA A COMLUMNA Y SE HACEN VISIBLES LOS TÍTULOS DE LOS TIPS
     @media (max-width: 878px){
        
-            section#matetips{
+            section#matetips{              
                 div#mateTips__tipsContainer{
                     display: flex;
                     flex-direction: column;  
