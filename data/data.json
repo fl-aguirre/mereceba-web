@@ -1,73 +1,73 @@
 [{
     "id": 1,
-    "nombre": "ABCDEF",
-    "img": "../images/1.png",
-    "medidas": "",
-    "materiales": ""
+    "nombre": "Camionero",
+    "img": "./images/mates/mate1.png",
+    "medidas": "15cm de diámetro x 20cm de alto",
+    "materiales": "Calabaza, forro de cuero vacuno  y virola de aluminio"
   }, {
     "id": 2,
     "nombre": "ABCDEF",
-    "img": "../images/2.png",
+    "img": "./images/mates/mate2.png",
     "medidas": "",
     "materiales": ""
   }, {
     "id": 3,
     "nombre": "ABCDEF",
-    "img": "../images/3.png",
+    "img": "./images/mates/mate3.png",
     "medidas": "",
     "materiales": ""
   }, {
     "id": 4,
     "nombre": "ABCDEF",
-    "img": "../images/4.png",
+    "img": "./images/mates/mate4.png",
     "medidas": "",
     "materiales": ""
   }, {
     "id": 5,
     "nombre": "ABCDEF",
-    "img": "../images/5.png",
+    "img": "./images/mates/mate5.png",
     "medidas": "",
     "materiales": ""
 }, {
     "id": 6,
     "nombre": "ABCDEF",
-    "img": "../images/6.png",
+    "img": "./images/mates/mate6.png",
     "medidas": "",
     "materiales": ""
 }, {
     "id": 7,
     "nombre": "ABCDEF",
-    "img": "../images/7.png",
+    "img": "./images/mates/mate7.png",
     "medidas": "",
     "materiales": ""
 }, {
     "id": 8,
     "nombre": "ABCDEF",
-    "img": "../images/8.png",
+    "img": "./images/mates/mate8.png",
     "medidas": "",
     "materiales": ""
 }, {
     "id": 9,
     "nombre": "ABCDEF",
-    "img": "../images/9.png",
+    "img": "./images/mates/mate9.png",
     "medidas": "",
     "materiales": ""
 }, {
     "id": 10,
     "nombre": "ABCDEF",
-    "img": "../images/10.png",
+    "img": "./images/mates/mate10.png",
     "medidas": "",
     "materiales": ""
 }, {
     "id": 11,
     "nombre": "ABCDEF",
-    "img": "../images/11.png",
+    "img": "./images/mates/mate11.png",
     "medidas": "",
     "materiales": ""
 }, {
     "id": 12,
     "nombre": "ABCDEF",
-    "img": "../images/12.png",
+    "img": "./images/mates/mate12.png",
     "medidas": "",
     "materiales": ""
 }]

@@ -13,6 +13,7 @@ html {
 body {
     font-family: 'Montserrat', sans-serif;
     background-color: $white;
+    color: $text2;
 }
 
 // !!!!!! aplicaré el text-transform al header únicamente
@@ -29,28 +30,43 @@ header{
     height: 9.6rem;
     font-weight: 500;
 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
     a {
         text-decoration: none;
         color: $text1;
+        height: fit-content;
+    }
+
+    .navbarTop__logo {
+        margin: 1.5rem;
+    }
+}
+
+//RESPONSIVE DEL LOGO
+@media (max-width: 576px){
+    .navbarTop__logo {
+        margin: 1rem;
+        width: 40%;
     }
 }
 
 //CONTENEDOR DEL CONTACTO Y LOS ICONOS DE WHATSAPP E INSTAGRAM
 .contactanosCont{
-    width: 300px;
     display: flex;
     flex-direction: row;
     z-index: 1000;
     align-items: center;
+    margin: 1rem;
 }
 
 .contactanosCont__text {
-    font-size: 2rem;
+    font-size: 1.8rem;
     text-align: center;
     color: $text1;
-    &:hover{
-        color: $brownHovered;
-    }
 }
 
 //Acá le doy formato al div que contiene los íconos. 
@@ -58,13 +74,14 @@ header{
 .instagramCont__icon, .whatsappCont__icon {
     background-color: $beige;
     border-radius: 50%; 
-    width: 4rem;
-    height: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
     position: relative;
-    margin: 0;
+    margin: 0.2rem;
     display: flex;
     align-items: center;
     i { 
+        font-size: 2.5rem;
         position: absolute;
         left: 0;
         right: 0;
@@ -76,13 +93,20 @@ header{
     }
 }
 
+//QUERIES PARA EL ANCHO DEL CONTACTANOS E ICONOS, Y PARA EL LOGO
+@media (min-width: 1200px){
+    .navbarTop img {
+        width: 20rem;
+    }
+}
+
 //PARTE INFERIOR DEL NAVBAR
 //Estilo para links y textos del navbar
 .navbar {
     a {
         text-decoration: none;
         color: $text1;
-        font-size: 2rem;
+        font-size: 1.8rem;
         font-style: normal;
         font-weight: 500;
         line-height: 26px;
@@ -114,7 +138,7 @@ header{
     //Acá lo pongo fixed para que el ícono de Instagram se desplace en el lateral de la web.
     .contactanosCont {
         position: fixed;
-        width: 40px;
+        margin: 0;
         bottom: 20px;
         right: 20px;
 
@@ -122,10 +146,22 @@ header{
         .contactanosCont__text {
             display: none;
         }
-    }
-    // Quitar el ícono de whatsapp en responsive
-    .whatsappCont__icon{
-        display: none;
+
+        .instagramCont__icon{
+            width: 5rem;
+            height: 5rem;
+            background-color: $darkBrown;
+            box-shadow: 0px 2px 5px $text1;
+
+            i{
+                color: $brownHovered ;
+                font-size: 3.5rem;
+            }
+        }
+        // Quitar el ícono de whatsapp en responsive
+        .whatsappCont__icon{
+            display: none;
+        }
     }
 
     .navbar li {
@@ -145,24 +181,32 @@ header{
 }
 
 //CAROUSEL
+.carousel {
+    height: 60rem;
+    img{
+        height: 60rem;
+        object-fit: cover;
+    }
+  }
+
 //BOTON Y FLECHA DEL CAROUSEL
 .carousel-control-prev, .carousel-control-next {
     background-color: $darkBrown;
     border-radius: 50%;
-    width: 4vw;
-    height: 4vw;
+    width: 4rem;
+    height: 4rem;
     top: 45% !important;
     margin: 1rem;
 }
 
 .carousel-control-prev-icon{
-    width: 2.1vw;
-    height: 2.1vw;
+    width: 2rem;
+    height: 2rem;
     margin-right: 0.3vw;
 }
 .carousel-control-next-icon {
-    width: 2.1vw;
-    height: 2.1vw;
+    width: 2rem;
+    height: 2rem;
     margin-left: 0.3vw;
 }
 
@@ -177,14 +221,17 @@ header{
     position: absolute;
     bottom: 15%;
     width: 100%;
-    height: 4vw;
-    padding: 0.5vw;
-    margin: 0;
-
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     background-color: $beigeOpacity;
-    font-size: 2.5vw;
-    text-align: center;
-    color: $text1;
+
+        font-size: 2.2rem;
+        text-align: center;
+        color: $text1;
+        font-weight: 600;
 }
 
 
@@ -216,6 +263,10 @@ main{
             margin: 2rem;
 
             text-align: center;
+
+            h1{
+                padding: 0.5rem;
+            }
         }
     }
 
@@ -234,9 +285,9 @@ main{
         flex-direction: column;
         align-items: center;
 
-        margin-top: 3rem;
-
-        text-transform: uppercase;
+        h1{
+            margin-top: 3rem;
+        }
 
         div#productos__pedidosInfo{
             display: flex;
@@ -244,25 +295,29 @@ main{
             justify-content: space-evenly;
             align-items: center;
 
-            width: 70%;
+            width: 80%;
             flex-wrap: wrap;
             text-align: center;
+            margin: 3rem;
 
             div.mainProductos__divInfo{                
                 display: flex;
                 flex-direction: row;
                 align-items: center;
                 width: 25rem;
-                margin: 2rem;                                
+                margin: 1rem;                                
 
                 img{
                     height: 3rem;
                     width: auto;
-                    margin: 1rem;
                 }
+
                 p{
                     text-align: center;
                     margin: 1rem;
+                    text-transform: uppercase;
+                    color: $text2;
+                    font-weight: 500;
                 }
             }
         }
@@ -271,7 +326,7 @@ main{
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            width: 70%;
+            width: 90%;
             justify-content: space-evenly;
 
             div{
@@ -280,10 +335,19 @@ main{
             }
 
             div.productos__card--hover{
+                width: 25rem ;
+
                 .btn:focus {
                     outline: none;
                     box-shadow: none;
                   }
+                
+                .card-title{
+                    text-transform: uppercase;
+                    color: $text2;
+                    font-weight: 500;
+                    font-size: 1.6rem;
+                }
             }
                   
             div.productos__card--hover:hover{
@@ -300,6 +364,7 @@ main{
                                 width: 100%;
                                 font-size: 3rem;
                                 text-align: center;
+<<<<<<< HEAD
                                 // margin-top: 5%;
                             }
                         }
@@ -320,15 +385,16 @@ main{
                         div.modal-body{
                             div{
                                 text-transform: lowercase;
+=======
+                                text-transform: uppercase;
+>>>>>>> a2c209f7b028343ad4f00bd447d2de11e27f951f
                             }
                         }
-                      
                     }
                 }
                
             }
         }
-        
     }
 
     // -----------------------------------------------------------------------------------------------------------
@@ -353,7 +419,9 @@ main{
             margin: 2rem;
             text-align: center;
 
-        
+            h1{
+                padding: 0.5rem;
+            }
         }
     }
 
@@ -373,7 +441,9 @@ main{
         flex-direction: column;
         text-align: center;
 
-        margin-top: 3rem;
+        h1{
+            margin-top: 3rem;
+        }
 
         div#mateTips__tipsContainer{
 
@@ -398,7 +468,7 @@ main{
     
                     h3{
                         display: none;
-                        font-size: 3rem;
+                        font-size: 2.5rem;
                         color: white;
     
                         position: relative;
@@ -452,6 +522,7 @@ main{
                     height: 100%;
                     display: flex;
                     align-items: center;
+                    padding: 1rem;
                     
                     ol{           
                         text-align: left;
@@ -459,7 +530,6 @@ main{
                             margin-top: 1.2rem;
                             p.mateTips__subtitulo{
                                 font-weight: bold;
-                                text-decoration: underline;
                                 margin-bottom: 0.2rem;
                             }
                         }
@@ -501,7 +571,7 @@ main{
 //FOOTER
 footer {
     background-color: $beige;
-    height: 12rem;
+    height: 15rem;
     padding: 2rem;
     text-align: center;
     
@@ -528,6 +598,15 @@ footer {
 
 
 // LAS QUERYS PARA DISPOSITIVOS DE PANTALLA PEQUEÑA DONDE SE VA CAMBIANDO EL TAMAÑO DE FUENTE RAIZ SEGÚN SEA EL CASO
+@media (min-width: 1200px){
+    html{
+        font-size: 0.8vw;
+    }
+    #mateTips__tipsContainer{
+        font-size: 1.6rem;
+    }
+}
+
 @media (max-width: 1010px){
     main{
         font-size: 1.4rem;
