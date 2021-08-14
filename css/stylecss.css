@@ -238,7 +238,6 @@ main {
         main section#nuestrosProductos div#productos div.modal div.modal-dialog div.modal-content div.modal-header h5 {
           width: 100%;
           font-size: 3rem;
-<<<<<<< HEAD
           text-align: center; }
   @media (max-width: 993px) {
     main div#productos {
@@ -246,10 +245,6 @@ main {
       overflow-y: scroll; }
       main div#productos div.modal div.modal-dialog div.modal-content div.modal-body div {
         text-transform: lowercase; } }
-=======
-          text-align: center;
-          text-transform: uppercase; }
->>>>>>> a2c209f7b028343ad4f00bd447d2de11e27f951f
   main section#matesPersonalizados {
     display: flex;
     flex-direction: column;
@@ -362,12 +357,6 @@ footer {
 @media (min-width: 993px) {
   footer {
     display: none; } }
-
-@media (min-width: 1200px) {
-  html {
-    font-size: 0.8vw; }
-  #mateTips__tipsContainer {
-    font-size: 1.6rem; } }
 
 @media (max-width: 1010px) {
   main {

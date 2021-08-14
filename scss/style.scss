@@ -364,7 +364,6 @@ main{
                                 width: 100%;
                                 font-size: 3rem;
                                 text-align: center;
-<<<<<<< HEAD
                                 // margin-top: 5%;
                             }
                         }
@@ -385,9 +384,6 @@ main{
                         div.modal-body{
                             div{
                                 text-transform: lowercase;
-=======
-                                text-transform: uppercase;
->>>>>>> a2c209f7b028343ad4f00bd447d2de11e27f951f
                             }
                         }
                     }
@@ -596,16 +592,7 @@ footer {
 }
 
 
-
 // LAS QUERYS PARA DISPOSITIVOS DE PANTALLA PEQUEÑA DONDE SE VA CAMBIANDO EL TAMAÑO DE FUENTE RAIZ SEGÚN SEA EL CASO
-@media (min-width: 1200px){
-    html{
-        font-size: 0.8vw;
-    }
-    #mateTips__tipsContainer{
-        font-size: 1.6rem;
-    }
-}
 
 @media (max-width: 1010px){
     main{
