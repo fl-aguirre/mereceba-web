@@ -364,7 +364,26 @@ main{
                                 width: 100%;
                                 font-size: 3rem;
                                 text-align: center;
-                                text-transform: uppercase;
+                                // margin-top: 5%;
+                            }
+                        }
+                    }
+                }
+               
+            }
+        }
+    }
+    // EN LOS DISPOSITIVOS MÓVILES LA DESCRIPCIÓN DEL MODAL ES EN MINÚSCULA
+    @media (max-width: 993px){
+        div#productos{
+            height: 80vh;
+            overflow-y: scroll;
+            div.modal{
+                div.modal-dialog{
+                    div.modal-content{
+                        div.modal-body{
+                            div{
+                                text-transform: lowercase;
                             }
                         }
                     }
@@ -528,7 +547,7 @@ main{
     // QUERY DONDE SE CAMBIA LA DISPOSICIÓN DE LOS BOTONES DE FILA A COMLUMNA Y SE HACEN VISIBLES LOS TÍTULOS DE LOS TIPS
     @media (max-width: 878px){
        
-            section#matetips{
+            section#matetips{              
                 div#mateTips__tipsContainer{
                     display: flex;
                     flex-direction: column;  
@@ -573,16 +592,7 @@ footer {
 }
 
 
-
 // LAS QUERYS PARA DISPOSITIVOS DE PANTALLA PEQUEÑA DONDE SE VA CAMBIANDO EL TAMAÑO DE FUENTE RAIZ SEGÚN SEA EL CASO
-@media (min-width: 1200px){
-    html{
-        font-size: 0.8vw;
-    }
-    #mateTips__tipsContainer{
-        font-size: 1.6rem;
-    }
-}
 
 @media (max-width: 1010px){
     main{
