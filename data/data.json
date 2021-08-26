@@ -1,73 +1,31 @@
 [{
     "id": 1,
-    "nombre": "Camionero",
+    "nombre": "Torpedo",
     "img": "./images/mates/mate1.png",
-    "medidas": "15cm de diámetro x 20cm de alto",
-    "materiales": "Calabaza, forro de cuero vacuno  y virola de aluminio"
+    "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
   }, {
     "id": 2,
-    "nombre": "ABCDEF",
+    "nombre": "Camionero",
     "img": "./images/mates/mate2.png",
-    "medidas": "",
-    "materiales": ""
+    "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
   }, {
     "id": 3,
-    "nombre": "ABCDEF",
+    "nombre": "Imperial",
     "img": "./images/mates/mate3.png",
-    "medidas": "",
-    "materiales": ""
+    "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
   }, {
-    "id": 4,
-    "nombre": "ABCDEF",
-    "img": "./images/mates/mate4.png",
-    "medidas": "",
-    "materiales": ""
-  }, {
-    "id": 5,
-    "nombre": "ABCDEF",
-    "img": "./images/mates/mate5.png",
-    "medidas": "",
-    "materiales": ""
-}, {
     "id": 6,
-    "nombre": "ABCDEF",
+    "nombre": "Criollo",
     "img": "./images/mates/mate6.png",
-    "medidas": "",
-    "materiales": ""
+    "materiales": "Están hechos com cerámica de gran calidad y aluminio"
 }, {
     "id": 7,
-    "nombre": "ABCDEF",
+    "nombre": "Camionero labrado",
     "img": "./images/mates/mate7.png",
-    "medidas": "",
-    "materiales": ""
+    "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
 }, {
     "id": 8,
-    "nombre": "ABCDEF",
+    "nombre": "Mate térmico",
     "img": "./images/mates/mate8.png",
-    "medidas": "",
-    "materiales": ""
-}, {
-    "id": 9,
-    "nombre": "ABCDEF",
-    "img": "./images/mates/mate9.png",
-    "medidas": "",
-    "materiales": ""
-}, {
-    "id": 10,
-    "nombre": "ABCDEF",
-    "img": "./images/mates/mate10.png",
-    "medidas": "",
-    "materiales": ""
-}, {
-    "id": 11,
-    "nombre": "ABCDEF",
-    "img": "./images/mates/mate11.png",
-    "medidas": "",
-    "materiales": ""
-}, {
-    "id": 12,
-    "nombre": "ABCDEF",
-    "img": "./images/mates/mate12.png",
-    "medidas": "",
-    "materiales": ""
+    "materiales": "Están hechos en acero inoxidable. (personalizadlo o monocolor)"
 }]
