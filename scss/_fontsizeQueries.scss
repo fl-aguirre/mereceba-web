@@ -1,0 +1,37 @@
+// LAS QUERYS PARA DISPOSITIVOS DE PANTALLA PEQUEÑA DONDE SE VA CAMBIANDO EL TAMAÑO DE FUENTE RAIZ SEGÚN SEA EL CASO
+
+@media (max-width: 1010px){
+    main{
+        font-size: 1.4rem;
+    }
+}
+@media (max-width: 878px){
+
+    html {
+        font-size: 1.3vw;
+    }
+}
+@media (max-width: 700px){
+
+    html {
+        font-size: 1.5vw;
+    }
+}
+@media (max-width: 600px){
+
+    html {
+        font-size: 1.8vw;
+    }
+}
+@media (max-width: 500px){
+
+    html {
+        font-size: 2vw;
+    }
+}
+@media (max-width: 400px){
+
+    html {
+        font-size: 2.27vw;
+    }
+}

@@ -1,0 +1,54 @@
+//CAROUSEL
+.carousel {
+    height: 60rem;
+    img{
+        height: 60rem;
+        object-fit: cover;
+    }
+  }
+
+//BOTON Y FLECHA DEL CAROUSEL
+.carousel-control-prev, .carousel-control-next {
+    background-color: $darkBrown;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    top: 45% !important;
+    margin: 1rem;
+}
+
+.carousel-control-prev-icon{
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.3vw;
+}
+.carousel-control-next-icon {
+    width: 2rem;
+    height: 2rem;
+    margin-left: 0.3vw;
+}
+
+//TEXTO DE LA IMAGEN DEL CAROUSEL
+.carousel__imagen{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.carousel__texto{
+    position: absolute;
+    bottom: 15%;
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: $beigeOpacity;
+
+        font-size: 2.2rem;
+        text-align: center;
+        color: $text1;
+        font-weight: 600;
+}
+

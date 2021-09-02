@@ -1,0 +1,158 @@
+// PARTE SUPERIOR DEL NAVBAR (contiene el logo y contacto)
+//Si te fijás, armé como un navbar de dos partes (navbarTop y navbarBottom) 
+//para poder agregar el "Contáctenos" y los íconos y, por debajo, el navbar que se hace toggle. 
+//Esto sería el estilo de la parte superior (navbarTop). 
+.navbarTop {
+    background-color: $beige;
+    height: 9.6rem;
+    font-weight: 500;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    a {
+        text-decoration: none;
+        color: $text1;
+        height: fit-content;
+    }
+
+    .navbarTop__logo {
+        margin: 1.5rem;
+    }
+}
+
+//RESPONSIVE DEL LOGO
+@media (max-width: 576px){
+    .navbarTop__logo {
+        margin: 1rem;
+        width: 40%;
+    }
+}
+
+//CONTENEDOR DEL CONTACTO Y LOS ICONOS DE WHATSAPP E INSTAGRAM
+.contactanosCont{
+    display: flex;
+    flex-direction: row;
+    z-index: 1000;
+    align-items: center;
+    margin: 1rem;
+}
+
+.contactanosCont__text {
+    font-size: 1.8rem;
+    text-align: center;
+    color: $text1;
+}
+
+//Acá le doy formato al div que contiene los íconos. 
+//Les pongo un radio redondo para usarlos en el responsive
+.instagramCont__icon, .whatsappCont__icon {
+    background-color: $beige;
+    border-radius: 50%; 
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
+    margin: 0.2rem;
+    display: flex;
+    align-items: center;
+    i { 
+        font-size: 2.5rem;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: $text1;
+        &:hover{
+            color: $brownHovered;
+        }
+    }
+}
+
+//QUERIES PARA EL ANCHO DEL CONTACTANOS E ICONOS, Y PARA EL LOGO
+@media (min-width: 1200px){
+    .navbarTop img {
+        width: 20rem;
+    }
+}
+
+//PARTE INFERIOR DEL NAVBAR
+//Estilo para links y textos del navbar
+.navbar {
+    a {
+        text-decoration: none;
+        color: $text1;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        letter-spacing: 0em;
+        text-align: center;
+    }
+}
+
+//Pintar de marrón el navbar
+#navbarBottom {
+    background-color: $darkBrown;
+    a:hover{
+        color: $brownHovered;
+    }
+}
+
+//Esto capaz no se entiende mucho. Boostrap detecta esta clase (originalmente pensada para el brand)
+// y ubica el toggle del navbar (en responsive) a la derecha. 
+//Entonces le puse el nombre de la página para que no quede vacío, pero lo oculté.
+.navbar-brand {
+    span {
+        display: none;
+    }
+}
+
+//RESPONSIVE DEL NAVBAR Y FOOTER
+@media (max-width: 993px){
+    //RESPONSIVE DEL CONTENEDOR DEL CONTACTO
+    //Acá lo pongo fixed para que el ícono de Instagram se desplace en el lateral de la web.
+    .contactanosCont {
+        position: fixed;
+        margin: 0;
+        bottom: 20px;
+        right: 20px;
+
+        //Acá oculto el texto "Contáctenos" al hacerse el responsive.
+        .contactanosCont__text {
+            display: none;
+        }
+
+        .instagramCont__icon{
+            width: 5rem;
+            height: 5rem;
+            background-color: $darkBrown;
+            box-shadow: 0px 2px 5px $text1;
+
+            i{
+                color: $brownHovered ;
+                font-size: 3.5rem;
+            }
+        }
+        // Quitar el ícono de whatsapp en responsive
+        .whatsappCont__icon{
+            display: none;
+        }
+    }
+
+    .navbar li {
+        margin: 1.5rem;
+    }
+    
+    #navbarBottom {
+        background-color: $beige;
+    }
+}
+
+//OCULTAR CONTACTO EN TOGGLER Y FOOTER
+@media (min-width: 993px){
+    #contactoId {
+        display: none;
+    }
+}
