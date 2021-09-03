@@ -1,6 +1,7 @@
 class Producto {
-    constructor(id, nombre, img, materiales) {
+    constructor(id, categoria, nombre, img, materiales) {
         this.id = id;
+        this.categoria = categoria;
         this.nombre = nombre;
         this.img = img;
         this.materiales = materiales;
@@ -10,15 +11,21 @@ class Producto {
 function productos(data) {
     $.getJSON(data,
         function (productos) {
-            const lista = [];
+
+            const listaMates = [];
+            const listaBombillas = [];
+
             for (const producto of productos) {
-                lista.push(new Producto(producto.id, producto.nombre, producto.img, producto.materiales));
+              if (producto.categoria === "mate"){
+                listaMates.push(new Producto(producto.id, producto.categoria, producto.nombre, producto.img, producto.materiales));
+              }
+              else if (producto.categoria === "bombilla") {
+                listaBombillas.push(new Producto(producto.id, producto.categoria, producto.nombre, producto.img, producto.materiales));
+              }
             }
-            if (lista[0].id <= 100){
-              renderMates(lista)
-            }else{
-              renderBombillas(lista)
-            }
+            
+            renderMates(listaMates);
+            renderBombillas(listaBombillas);
         }
     );
 }
@@ -53,7 +60,6 @@ function renderMates(listado) {
 `);
 
     }
-    console.log(listado);
 }
 
 function renderBombillas(listado) {
@@ -85,8 +91,6 @@ function renderBombillas(listado) {
 `);
 
   }
-  console.log(listado);
 }
 
-productos("./data/dataMates.json");
-productos("./data/dataBombillas.json");
+productos("./data/data.json");

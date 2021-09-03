@@ -1,31 +1,55 @@
 [{
     "id": 1,
+    "categoria": "mate",
     "nombre": "Torpedo",
     "img": "./images/mates/torpedo.png",
     "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
   }, {
     "id": 2,
+    "categoria": "mate",
     "nombre": "Camionero",
     "img": "./images/mates/camionero.png",
     "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
   }, {
     "id": 3,
+    "categoria": "mate",
     "nombre": "Imperial",
     "img": "./images/mates/imperial.png",
     "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
   }, {
     "id": 4,
+    "categoria": "mate",
     "nombre": "Criollo",
     "img": "./images/mates/criollo.png",
     "materiales": "Están hechos com cerámica de gran calidad y aluminio"
 }, {
     "id": 5,
+    "categoria": "mate",
     "nombre": "Camionero labrado",
     "img": "./images/mates/camionerolabrado.png",
     "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
 }, {
     "id": 6,
+    "categoria": "mate",
     "nombre": "Mate térmico",
     "img": "./images/mates/termico.png",
     "materiales": "Están hechos en acero inoxidable. (personalizadlo o monocolor)"
+}, {
+    "id": 7,
+    "categoria": "bombilla",
+    "nombre": "Pampa",
+    "img": "./images/mates/bombillas/bombilla1.jpeg",
+    "materiales": "..."
+}, {
+    "id": 8,
+    "categoria": "bombilla",
+    "nombre": "Caju",
+    "img": "./images/mates/bombillas/bombilla2.jpeg",
+    "materiales": "..."
+}, {
+    "id": 9,
+    "categoria": "bombilla",
+    "nombre": "Tava",
+    "img": "./images/mates/bombillas/bombilla3.jpeg",
+    "materiales": "..."
 }]
