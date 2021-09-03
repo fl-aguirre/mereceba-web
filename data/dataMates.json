@@ -1,31 +1,31 @@
 [{
     "id": 1,
     "nombre": "Torpedo",
-    "img": "./images/mates/mate1.png",
+    "img": "./images/mates/torpedo.png",
     "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
   }, {
     "id": 2,
     "nombre": "Camionero",
-    "img": "./images/mates/mate2.png",
+    "img": "./images/mates/camionero.png",
     "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
   }, {
     "id": 3,
     "nombre": "Imperial",
-    "img": "./images/mates/mate3.png",
+    "img": "./images/mates/imperial.png",
     "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
   }, {
-    "id": 6,
+    "id": 4,
     "nombre": "Criollo",
-    "img": "./images/mates/mate6.png",
+    "img": "./images/mates/criollo.png",
     "materiales": "Están hechos com cerámica de gran calidad y aluminio"
 }, {
-    "id": 7,
+    "id": 5,
     "nombre": "Camionero labrado",
-    "img": "./images/mates/mate7.png",
+    "img": "./images/mates/camionerolabrado.png",
     "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
 }, {
-    "id": 8,
+    "id": 6,
     "nombre": "Mate térmico",
-    "img": "./images/mates/mate8.png",
+    "img": "./images/mates/termico.png",
     "materiales": "Están hechos en acero inoxidable. (personalizadlo o monocolor)"
 }]

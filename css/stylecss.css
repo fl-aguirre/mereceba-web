@@ -267,39 +267,45 @@ main {
           text-transform: uppercase;
           color: #6A6565;
           font-weight: 500; }
-    main section#nuestrosProductos div#productos {
+    main section#nuestrosProductos div#productosBombillas {
+      margin-top: 5rem; }
+    main section#nuestrosProductos div#productosMates, main section#nuestrosProductos #productosBombillas {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
       width: 90%;
       justify-content: space-evenly; }
-      main section#nuestrosProductos div#productos div {
+      main section#nuestrosProductos div#productosMates div, main section#nuestrosProductos #productosBombillas div {
         text-align: center;
         border: none; }
-      main section#nuestrosProductos div#productos div.productos__card--hover {
+      main section#nuestrosProductos div#productosMates div.productos__card--hover, main section#nuestrosProductos #productosBombillas div.productos__card--hover {
         width: 25rem; }
-        main section#nuestrosProductos div#productos div.productos__card--hover .btn:focus {
+        main section#nuestrosProductos div#productosMates div.productos__card--hover .btn:focus, main section#nuestrosProductos #productosBombillas div.productos__card--hover .btn:focus {
           outline: none;
           box-shadow: none; }
-        main section#nuestrosProductos div#productos div.productos__card--hover .card-title {
+        main section#nuestrosProductos div#productosMates div.productos__card--hover .card-title, main section#nuestrosProductos #productosBombillas div.productos__card--hover .card-title {
           text-transform: uppercase;
           color: #6A6565;
           font-weight: 500;
           font-size: 1.6rem; }
-      main section#nuestrosProductos div#productos div.productos__card--hover:hover {
+      main section#nuestrosProductos div#productosMates div.productos__card--hover:hover, main section#nuestrosProductos #productosBombillas div.productos__card--hover:hover {
         background-color: rgba(239, 229, 219, 0.6); }
-      main section#nuestrosProductos div#productos div.modal div.modal-dialog div.modal-content div.modal-header {
+      main section#nuestrosProductos div#productosMates div.modal div.modal-dialog div.modal-content div.modal-header, main section#nuestrosProductos #productosBombillas div.modal div.modal-dialog div.modal-content div.modal-header {
         display: flex;
         flex-direction: column; }
-        main section#nuestrosProductos div#productos div.modal div.modal-dialog div.modal-content div.modal-header h5 {
+        main section#nuestrosProductos div#productosMates div.modal div.modal-dialog div.modal-content div.modal-header h5, main section#nuestrosProductos #productosBombillas div.modal div.modal-dialog div.modal-content div.modal-header h5 {
           width: 100%;
           font-size: 3rem;
           text-align: center; }
+      main section#nuestrosProductos div#productosMates div.modal div.modal-dialog div.modal-content div.modal-body-mate p, main section#nuestrosProductos #productosBombillas div.modal div.modal-dialog div.modal-content div.modal-body-mate p {
+        padding: 1rem; }
+      main section#nuestrosProductos div#productosMates div.modal div.modal-dialog div.modal-content div.modal-body-bombilla, main section#nuestrosProductos #productosBombillas div.modal div.modal-dialog div.modal-content div.modal-body-bombilla {
+        padding: 5rem; }
   @media (max-width: 993px) {
-    main div#productos {
+    main div#productosMates, main #productosBombillas {
       height: 80vh;
       overflow-y: scroll; }
-      main div#productos div.modal div.modal-dialog div.modal-content div.modal-body div {
+      main div#productosMates div.modal div.modal-dialog div.modal-content div.modal-body div, main #productosBombillas div.modal div.modal-dialog div.modal-content div.modal-body div {
         text-transform: lowercase; } }
   main section#matesPersonalizados {
     display: flex;
@@ -405,10 +411,14 @@ footer {
   margin-top: 1.5rem; }
   footer h1 {
     margin-bottom: 1rem; }
-  footer i {
-    margin: 1rem; }
-    footer i:hover {
-      color: #AA7B6D; }
+  footer a {
+    text-decoration: none;
+    height: fit-content; }
+    footer a i {
+      margin: 1rem;
+      color: #414141; }
+      footer a i:hover {
+        color: #AA7B6D; }
 
 @media (min-width: 993px) {
   footer {

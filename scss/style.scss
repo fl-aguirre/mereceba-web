@@ -112,8 +112,14 @@ main{
                 }
             }
         }
+
+        //Aplica sólo para la sección bombillas
+        div#productosBombillas {
+            margin-top: 5rem;
+        }
+
         //la lista de productos que se hará de forma dinámica 
-        div#productos{
+        div#productosMates, #productosBombillas {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
@@ -155,8 +161,13 @@ main{
                                 width: 100%;
                                 font-size: 3rem;
                                 text-align: center;
-                                // margin-top: 5%;
                             }
+                        }
+                        div.modal-body-mate p{
+                            padding: 1rem;
+                        }
+                        div.modal-body-bombilla{
+                            padding: 5rem;
                         }
                     }
                 }
@@ -166,7 +177,7 @@ main{
     }
     // EN LOS DISPOSITIVOS MÓVILES LA DESCRIPCIÓN DEL MODAL ES EN MINÚSCULA
     @media (max-width: 993px){
-        div#productos{
+        div#productosMates, #productosBombillas{
             height: 80vh;
             overflow-y: scroll;
             div.modal{
@@ -367,10 +378,16 @@ footer {
     h1{
         margin-bottom: 1rem;
     }
-    i {
-        margin: 1rem;
-        &:hover{
-            color: $brownHovered;
+    a {
+        text-decoration: none;
+        height: fit-content;
+
+        i {
+            margin: 1rem;
+            color: $text1;
+            &:hover{
+                color: $brownHovered;
+            }
         }
     }
 }
