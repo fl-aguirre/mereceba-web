@@ -33,21 +33,51 @@
     "categoria": "mate",
     "nombre": "Mate térmico",
     "img": "./images/mates/termico.png",
-    "materiales": "Están hechos en acero inoxidable. (personalizadlo o monocolor)"
+    "materiales": "Están hechos en acero inoxidable (personalizado o monocolor)"
 }, {
     "id": 7,
+    "categoria": "mate",
+    "nombre": "Perla",
+    "img": "./images/mates/perla.png",
+    "materiales": "Hechos completamente de vidrio"
+}, {
+    "id": 8,
+    "categoria": "mate",
+    "nombre": "Clásico",
+    "img": "./images/mates/clasico.png",
+    "materiales": "Aluminio y algarrobo, dibujado artesanalmente "
+}, {
+    "id": 9,
+    "categoria": "mate",
+    "nombre": "Camionero Marrón",
+    "img": "./images/mates/camioneromarron.png",
+    "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones. Colores: clásicos, borravino, rosado, verde y azul"
+}, {
+    "id": 10,
+    "categoria": "mate",
+    "nombre": "Torpedo Rosado",
+    "img": "./images/mates/torpedorosado.png",
+    "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones. Colores: clásicos, borravino, rosado, verde y azul"
+}, {
+    "id": 11,
+    "categoria": "mate",
+    "nombre": "Imperial",
+    "img": "./images/mates/imperial.png",
+    "materiales": "Están hechos con seleccionadas calabazas brasileñas, forrados en cuero premium. Sin dejar de lado su contenido artesanal, reflejado en sus terminaciones"
+}, {
+    "id": 101,
     "categoria": "bombilla",
     "nombre": "Pampa",
     "img": "./images/mates/bombillas/bombilla1.jpeg",
     "materiales": "..."
 }, {
-    "id": 8,
+    "id": 102,
     "categoria": "bombilla",
     "nombre": "Caju",
     "img": "./images/mates/bombillas/bombilla2.jpeg",
     "materiales": "..."
 }, {
-    "id": 9,
+    "id": 103,
     "categoria": "bombilla",
     "nombre": "Tava",
     "img": "./images/mates/bombillas/bombilla3.jpeg",
